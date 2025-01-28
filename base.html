@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Blog</title>
+  <style>body {
+    margin: 0; /* removes broweser's default margin*/
+    font-family: Arial, sans-serif;/*font*/
+    }
+    
+    main {
+    display: flex;/*for horizontal layout*/
+    justify-content: space-between;/*provides space equal space between*/
+    align-items: flex-start;/*start's arranging the content for the start*/
+    padding: 20px;/*adds space inside the container*/
+    gap: 20px;/*adds space */
+    }
+    
+    .space {
+    display: flex;/*enables flex*/
+    flex-direction: column;/*vertically arragned*/
+    justify-content: center;/*centres content inside box */
+    align-items: center;/*centres the elemets */
+    flex: 1;/*size of flex*/
+    max-width: 30%;/*make sure all box fit in a horizontal way */
+    text-align: center;/*content text at centre */
+    padding: 20px;/* Includes padding,border in calcualtion */
+    box-sizing: border-box;/*adds a light border*/
+    border: 1px solid #ddd;/*border colour*/
+    background-color: #e9e3e3;
+    border-radius: 5px;/*rounds the border*/
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4); /*adds a shadow*/
+    }
+    
+    
+    .space img {
+    max-width: 100%;/*make sure's that image is in the box*/
+    height: auto;
+    aspect-ratio: 16 / 9; /*set's ratio with user's resolution*/
+    object-fit: cover; /*ensures the image fits the container*/  
+    margin-bottom: 10px;/*adds space below fo text*/
+    border-radius: 5px;/*rounds the corner of image */
+    }
+    
+    
+    .redirect a {
+    text-decoration: none;
+    color: #1a07c5;
+    font-weight: bold;
+    }
+    
+    .redirect a:hover {
+    text-decoration: underline;/*underline's the redirect link*/
+    }
+    </style>
+</head> 
+  </header>
+  <body>
+    <!--main header-->
+    <h1  style="margin-left: 25px;margin-top: 35px;">Latest Articles</h1>
+  <main>
+    <div class="space"><!--div -->
+      <img class="c1" src="rollyy.jpg" alt="pros"><!--image-->
+      <p class="bio">Positive impact of technology on watches</p><!--sub heading of individuals-->
+      <p class="redirect"><a href="positive.html">Read more</a></p><!--redirect -->
+    </div>
+
+    <div class="space">
+      <img class="c2" src="negative1.jpg" alt="cons"><!--image-->
+      <p class="bio">Negative impacts caused by technology on watches</p><!--sub heading of individuals-->
+      <p class="redirect"><a href="cons.html">Read more</a></p><!--redirect -->
+    </div>
+    
+    <div class="space">
+      <img class="c3" src="tech boost.jpg" alt="summary"><!--image-->
+      <p class="bio">How technology has affected the sales of watches?</p><!--sub heading of individuals-->
+      <p class="redirect"><a href="sumamry.html">Read more</a></p><!--redirect -->
+    </div>
+  </main>
+</body>
+</html>
